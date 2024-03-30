@@ -149,15 +149,20 @@ function alerta_bulbasur(){
         if (result.isConfirmed) {
             var nombre_capturado=document.getElementById("nombre").value;
             document.getElementById("pregunta_elegir").innerHTML="¡Felicidades" + " " + nombre_capturado + " " + "has elejido a Bulbasur!";
+
+                   // Deshabilitar los botones de selección nuevamente
+            var botonesSeleccionar = document.querySelectorAll('.btn_2');
+            botonesSeleccionar.forEach(function(boton) {
+            boton.setAttribute('disabled', 'true');
+            });
         }
 
-        // Deshabilitar los botones de selección nuevamente
-        var botonesSeleccionar = document.querySelectorAll('.btn_2');
-        botonesSeleccionar.forEach(function(boton) {
-        boton.setAttribute('disabled', 'true');
-        });
+ 
       });
 }
+
+
+
 
 
 
