@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POKEMON INICIAL</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="reset.css">
+    <script src="app.js"></script>
+    <!--AGREGANDO LAS FUENTES-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"> </script>
+</head>
+
+<body>
+    
+    <header>
+
+        <div class="nav">
+            <a href="https://www.pngwing.com/es/free-png-iygru/download" target="_blank"> <img src="img/GITHUB.png" id="logo_git"> </a>
+            <a href="https://www.linkedin.com/in/yrvin-pachas/" target="_blank"><img src="img/LINDEKIN.png" id="logo_lin"> </a>
+            
+            
+            <img src="img/logo.png" id="logo_pokemon">
+
+            <div class="container_nombre">
+                <label for="nombre" id="texto_pregunta">INSERTA TU NOMBRE: </label>
+                <input type="text" id="nombre" autocomplete="off">
+                <button class="btn_1"  onclick="nombre_Usuario()">Aceptar</button>
+            </div>
+            
+        </div>
+
+    </header>
+
+
+    <main>
+
+        
+
+        
+        <div class="izquierda"> 
+            <div class="profesor_oak">
+                <img src="img/IntroOak.webp" id="profesor_imagen" alt="imagen que muestra al profesor oak">
+                <p id="pregunta_elegir"> </p>
+            </div>
+        </div>
+
+        <div class="derecha">
+
+            <div class="eleccion_pokemon">
+
+                <div>
+                    <img src="img/pokeball.png" class="pokeball" id="poke_charmander" onclick="pokebola_Abierta_charmander()">
+                    <button class="btn_2" type="button" onclick="alerta_charmander()" disabled>Seleccionar</button>
+                </div>
+    
+                <div>
+                    <img src="img/pokeball.png" class="pokeball" id="poke_squarltle"  onclick="pokebola_Abierta_squarltle()">
+                    <button class="btn_2" type="button" onclick="alerta_squarltle()" disabled>Seleccionar</button>
+                </div>
+    
+                <div>
+                    <img src="img/pokeball.png" class="pokeball"  id="poke_bulbasur" onclick="pokebola_Abierta_bulbasur()">
+                    <button class="btn_2" type="button" onclick="alerta_bulbasur()" disabled>Seleccionar</button>
+                </div>
+
+            </div>
+
+            <div class="habilidades_pokemon" id="fondo_pokedex" >
+                
+            </div>
+           
+        </div>
+
+       
+
+
+    </main>
+
+
+
+    <footer>
+        <p id="desarrollador">DESARROLLADOR:YRVIN PACHAS</p>
+    </footer>
+
+</body>
+
+
+</html>

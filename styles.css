@@ -1,0 +1,213 @@
+.nav{
+    background: rgb(44, 40, 75);
+    text-align: center;
+    display: block;
+}
+
+
+
+main {
+    position: relative; /* Establece la posición relativa para que los elementos absolutos sean relativos a este */
+}
+
+main::after {
+    content: ""; /* Agrega contenido al pseudo-elemento */
+    position: absolute; /* Lo posiciona de manera absoluta */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("img/pueblopaleta.png");
+    opacity: 0.5; /* Opacidad solo para el fondo */
+    z-index: -1; /* Asegura que esté detrás de otros elementos */
+}
+
+#logo_git{
+    text-align: left;
+    float: left;
+    width: 60px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+#logo_lin{
+    text-align: left;
+    float: left;
+    width: 60px;
+    margin-top: 20px;
+    margin-left: 10px;  
+}
+
+#logo_pokemon{
+    margin-top: 5px;
+    width: 200px;
+    margin-right: 150px;
+}
+
+.container_nombre input{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.btn_1{
+    width: 130px;
+    border-radius: 28px;
+    padding: 10px;
+    background: yellow;
+    cursor: pointer;
+    font-family: "Press Start 2P", system-ui;
+}
+
+#texto_pregunta{
+    font-family: "Press Start 2P", system-ui;
+    color: white;
+}
+
+#nombre{
+    height: 25px;
+    font-family: "Press Start 2P", system-ui;
+    color: black;
+    border-radius: 20px;  
+}
+
+.izquierda{
+    text-align: center;
+
+    width: 30%;
+    height: 450px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    margin-left: 120px;
+    border-radius: 28px;
+    border: 4px solid rgb(44, 40, 75);
+    background-image: url("img/fondo_pro.jpg");
+    background-repeat: no-repeat;
+    display: inline-block;
+    overflow-y: auto;
+    background-color: white;
+    
+}
+
+#profesor_imagen{
+    margin-top: 40px;
+    margin-bottom: 10px;
+    width: 200px;
+
+}
+
+
+
+
+#pregunta_elegir{
+    margin-top: 5px;
+    font-family: "Press Start 2P", system-ui; 
+    line-height: 25px;
+
+
+
+}
+
+
+.derecha{
+
+    text-align: center;
+    width: 50%;
+    background: rgb(44, 40, 75);
+    display: inline-block;
+    vertical-align: top; /*este es importante*/
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+}
+
+.eleccion_pokemon{
+    height: 200px;
+    margin: 10px;
+    background-color: aqua;
+    display: flex;
+    background-image: url("img/mesa.jpeg");
+    border-radius: 10px;
+}
+
+.btn_2{
+    width: 130px;
+    border-radius: 28px;
+    padding: 10px;
+    font-size: 10px;
+    background: yellow;
+    cursor: pointer;
+    font-family: "Press Start 2P", system-ui;
+}
+
+
+
+.pokeball{
+    width: 150px;
+    transition: transform 0.3s ease; 
+    
+}
+
+
+
+
+
+
+
+.pokeball:hover {
+    transform: scale(1.1); /* Aumenta el tamaño de la pokebola al pasar el cursor */
+}
+
+.habilidades_pokemon{
+    margin: 10px;
+    height: 200px;
+    
+    background-color: brown;
+    background-image: url("img/pokedex_normal.jpg");
+    border-radius: 10px;
+
+}
+
+
+
+footer{
+    width: 100%;
+    height: 34px;
+    text-align: center;
+    background-color:  rgb(44, 40, 75);
+    
+}
+
+#desarrollador{
+    padding-top: 10px;
+    font-family: "Press Start 2P", system-ui;
+    color: white;
+
+}
+
+@media screen and (max-width:520px){
+
+    #logo_git, #logo_lin{
+        width: 50px;
+    }
+
+    .izquierda{
+        width: 400px;
+        margin-left: 40px;
+    }
+
+    .derecha{
+        width: 470px;
+        margin-left: 5px;
+        margin-bottom: 15px;
+    }
+
+
+    .habilidades_pokemon{
+        background-size: contain; /* Ajusta el tamaño de la imagen para que quepa completamente en el contenedor */
+        background-position: center; /* Centra la imagen en el contenedor */
+       height: 150px;
+    
+    }
+    
+
+}
