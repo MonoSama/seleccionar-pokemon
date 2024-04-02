@@ -187,15 +187,15 @@ footer{
 @media screen and (max-width:520px){
     /*CAMBIOS*/
     header{
-        width: 500px;
+        width: 450px;
     }
 
     main{
-        width: 500px;
+        width: 450px;
     }
 
     footer{
-        width: 500px;
+        width: 450px;
     }
     /*==============*/
 
